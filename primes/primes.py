@@ -7,3 +7,16 @@ def is_prime(x):
     else:
         return True
     return False
+
+
+def prime_to(t):
+    res = []
+    for n in range(t):
+        if n > 1:
+            for i in range(2, n):
+                if (n % i) == 0:
+                    break
+            else:
+                res.append(n)
+    return "\n".join(map(str, res))
+
