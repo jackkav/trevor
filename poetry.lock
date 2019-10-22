@@ -161,8 +161,8 @@ version = "0.6.0"
 more-itertools = "*"
 
 [metadata]
-content-hash = "ec1e8fbf2a79680ec831b21946381cdf678e78dae8023ffda5229bcbc2b49a9f"
-python-versions = "^3.7"
+content-hash = "7369f5fd8b0b8a7bb16d43a51686b5931eb3451b0227ae03275d4b5c1655159f"
+python-versions = "3.7.4"
 
 [metadata.hashes]
 argh = ["a9b3aaa1904eeb78e32394cd46c6f37ac0fb4af6dc488daa58971bdc7d7fcaf3", "e9535b8c84dc9571a48999094fda7f33e63c3f1b74f3e5f3ac0105a58405bb65"]
