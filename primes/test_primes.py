@@ -2,12 +2,12 @@ from primes import is_prime, prime_to
 
 
 def test_prime_low_number():
-    assert is_prime(1) == False
-    assert is_prime(2) == True
-    assert is_prime(3) == True
-    assert is_prime(5) == True
-    assert is_prime(6) == False
-    assert is_prime(7) == True
+    assert is_prime(1) is False
+    assert is_prime(2) is True
+    assert is_prime(3) is True
+    assert is_prime(5) is True
+    assert is_prime(6) is False
+    assert is_prime(7) is True
 
 
 def test_prime_up_to_100():
@@ -39,4 +39,3 @@ def test_prime_up_to_100():
 89
 97"""
     )
-
