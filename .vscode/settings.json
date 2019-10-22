@@ -1,3 +1,19 @@
 {
-  "python.formatting.provider": "black"
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.testing.pytestArgs": [
+    "."
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.linting.flake8Args": [
+    "--max-line-length=88"
+  ],
+  "python.formatting.blackPath": "black",
+  "cornflakes.linter.executablePath": "flake8",
+  "editor.formatOnSave": true,
+  "python.pythonPath": "/Users/jack/Library/Caches/pypoetry/virtualenvs/trevor-py3.7/bin/python"
 }

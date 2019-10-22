@@ -19,4 +19,3 @@ def prime_to(t):
             else:
                 res.append(n)
     return "\n".join(map(str, res))
-

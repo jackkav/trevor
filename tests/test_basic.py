@@ -6,8 +6,9 @@ def test_basics():
     assert "UPPER" == "upper".upper()
     assert "hello" == "".join(["he", "llo"])
     assert 6 == sum([1, 2, 3])
-    assert True == any([0, 1, 0])
-    assert True == all([1, 1, 1])
+    assert any([0, 1, 0]) is True
+    assert all([1, 1, 1]) is True
+
     # remove falsey
     assert [1, 1] == list(filter(None, [1, 0, 1]))
     assert ["a", "b"] == list(filter(None, ["a", "", "b"]))
