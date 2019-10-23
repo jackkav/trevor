@@ -32,6 +32,7 @@ def test_basics():
     # binary
     assert "110" == bin(6)[2:]
     assert 6 == int("110", 2)
+    # string split
     assert ["h", "i"] == list("hi")
     # frequency
     assert {"a": 3, "b": 1} == (lambda a: {x: a.count(x) for x in a})(
