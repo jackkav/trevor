@@ -15,5 +15,6 @@
   "python.formatting.blackPath": "black",
   "cornflakes.linter.executablePath": "flake8",
   "editor.formatOnSave": true,
-  "python.pythonPath": "/Users/jack/Library/Caches/pypoetry/virtualenvs/trevor-py3.7/bin/python"
+  "python.pythonPath": "/Users/jack/Library/Caches/pypoetry/virtualenvs/trevor-py3.7/bin/python",
+  "restructuredtext.confPath": ""
 }

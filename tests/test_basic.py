@@ -38,15 +38,13 @@ def test_basics():
         ["a", "a", "a", "b"]
     )
     assert {"a": 1, "b": 2} == (lambda a: {x: a.count(x) for x in a})(["a", "b", "b"])
-
+    # farenheit
     assert 10 == (lambda f: (f - 32) * 5 / 9)(50)
-    # add a secondary property [{'a':3,'b':2},{'a':3,'b':2}].map(x=>({...x,c:x.b}))
-    # assert [{"a": 3, "b": 2}, {"a": 3, "b": 2}] == list(
-    #     map(lambda x: x if x.get("b") else x.b, [{"a": 3, "b": 2}, {"a": 3, "b": 2}])
-    # )
-
     # computed
-
-    # assert {"first": "jack", "last": "kavanagh", "full": "jack kavanagh"} == (
-    #     lambda first, last: {first, last, full:=first+last}
-    # )({"first": "jack", "last": "kavanagh"})
+    assert {"first": "jack", "last": "kavanagh", "full": "jack kavanagh"} == (
+        lambda first, last: {"first": first, "last": last, "full": f"{first} {last}"}
+    )(**{"first": "jack", "last": "kavanagh"})
+    # n args
+    assert {"first": "jack", "last": "kavanagh", "full": "jack kavanagh"} == (
+        lambda **kwargs: {**kwargs, "full": " ".join(kwargs.values())}
+    )(**{"first": "jack", "last": "kavanagh"})
