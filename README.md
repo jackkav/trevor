@@ -1,17 +1,26 @@
 ### get started
+- 
+`poetry install`
 
-poetry install
+
 if using vscode: add your poetry venv to vscode settings
 
-`tmp=$(mktemp) && jq '."python.pythonPath" = "'$(poetry run which python)'"' settings.json > "$tmp" && mv "$tmp" settings.json`
+`tmp=$(mktemp) && jq '."python.pythonPath" = "'$(poetry run which python)'"' .vscode/settings.json > "$tmp" && mv "$tmp" .vscode/settings.json`
 
-poetry run which python
-poetry run ptw
+`poetry run ptw`
+or
+`poetry shell`
+`ptw`
 
 
-TODO
-memoize
-bitwise
-sets, intersections
-string numbers
-async io
+### TODO
+- [x] primes
+- [x] basics
+- [x] fizzbuzz
+- [x] guards
+- [x] ordinals
+- memoize
+- bitwise
+- sets, intersections
+- string numbers
+- async io
