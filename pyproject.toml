@@ -1,7 +1,8 @@
 [tool.poetry]
 name = "trevor"
 version = "0.1.0"
-description = ""
+description = "Collection of snippets and experiments."
+readme = "README.md"
 authors = ["Jack Kavanagh <jackkav@gmail.com>"]
 
 [tool.poetry.dependencies]
@@ -15,3 +16,7 @@ black = {version = "^18.3-alpha.0", allows-prereleases = true}
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 88
+target_version = ['py37']
