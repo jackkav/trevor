@@ -1,5 +1,5 @@
 def is_prime(x):
-    return (all(x % y != 0 for y in range(2, x)), False)[x == 1]
+    return (all(x % y != 0 for y in range(2, x)), False)[x < 2]
 
 
 def prime_to(t):
